@@ -1,0 +1,176 @@
+.articlepageelements {
+    margin-top: 20px;
+    text-align: center;
+    padding-bottom: 2.5rem;
+}
+
+button:focus, .articlepageelements button:active{
+    border: none;
+    outline: none;
+}
+
+.articlepageelements h1 {
+    font-size: 1.5em;
+}
+
+.articlepageelements .container {
+    width: 900px;
+    background-color: rgb(23, 26, 33);
+    border-radius: 5px;
+    margin-top: 30px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.articlepageelements .carousel-inner img {
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 5px solid rgb(42, 63, 90);
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.articlepageelements .articleinfo {
+    display: flex;
+}
+
+.articlepageelements .rating {
+    display: flex;
+    float: left;
+    margin-right: auto;
+}
+
+.articlepageelements .rating button {
+    background-color: rgb(23, 26, 33);
+    border: none;
+    padding: 0px;
+    margin-right: 15px;
+    font-size: 1.5em;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.articlepageelements .rating h1 {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 15px;
+}
+
+.articlepageelements .jumpbutton {
+    float: right;
+    margin-left: auto;
+    background-color: rgb(42, 63, 90);
+    border: none;
+    box-shadow: 0px 2.5px 5px rgb(23, 26, 33);
+    color: rgb(196, 196, 196);
+    font-size: 1em;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.articlepageelements .jumpbutton:hover {
+    color: rgb(236, 236, 236);
+}
+
+.articlepageelements .jumpbutton:active {
+    color: white;
+}
+
+.articlepageelements .articlecontent {
+    margin-top: 20px;
+}
+
+.articlepageelements .articlecontent h1 {
+    text-align: left;
+}
+
+.articlepageelements .articlecontent p {
+    color: rgb(196, 196, 196);
+    text-align: left;
+}
+
+.articlepageelements .articlecontent img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.articlepageelements .commentbox {
+    display: block;
+    margin-bottom: 25px;
+}
+
+.articlepageelements .comment {
+    display: flex;
+    text-align: left;
+    align-items: flex-start;
+    background-color: rgb(42, 63, 90);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.articlepageelements .comment .avatar {
+    width: 70px;
+    border: 2px solid rgb(23, 132, 196);
+    margin-right: 15px;
+    margin-bottom: auto;
+}
+
+.articlecontent .comment .userinfo {
+    margin: 0px;
+    padding: 0px;
+    width: fit-content;
+}
+
+.articlepageelements .comment .userinfo h1 {
+    font-size: 1.1em;
+    margin-top: 0px;
+    width: 110px;
+}
+
+.articlepageelements .comment .userinfo p {
+    color: rgb(196, 196, 196);
+    font-size: 0.8em;
+    margin: 0px;
+    padding: 0px;
+}
+
+.articlepageelements .comment p {
+    color: rgb(196, 196, 196);
+    margin-left: 15px;
+    font-size: 1em;
+    margin-bottom: 0px;
+}
+
+.articlepageelements .commentbox .commentrating {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.articlepageelements .commentbox .commentrating button {
+    outline: none;
+    border: none;
+    font-size: 1.2em;
+    background-color: rgb(23, 26, 33);
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.articlepageelements .commentbox .commentrating h1 {
+    font-size: 1.2em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.articlepageelements .commentbox .comment a:hover {
+    text-decoration: underline;
+}
+

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <link type="text/css" rel="stylesheet" href="css/globalstyle.css">
+        <link type="text/css" rel="stylesheet" href="css/articlepagestyle.css">
+        <link type="text/css" rel="stylesheet" href="css/profilepagestyle.css">
+    </head>
+    <body>
+        <div class="persistentmenu">
+            <div>
+                <a class="logo" href="homepage.html">
+                    <img src="images/logo.png">
+                    <h1>COMMUNITY</h1>
+                </a>
+            </div>   
+            <h1 class="clickable"><a href="https://store.steampowered.com">STORE</a></h1>
+            <h1 class="clickable"><a href="https://steamcommunity.com/chat">CHAT</a></h1>
+            <h1 class="clickable"><a href="https://help.steampowered.com/en">SUPPORT</a></h1>
+            <div class="profile">
+                <a href="profilepage.html"><img class="image" src="images/profile1.png"></a>
+                <div>
+                    <h1 class="username">RobyTanama</h1>
+                    <h2 class="wallet">$14.60</h2>
+                </div>
+            </div>
+        </div>
+        <div class=profilepageelements>
+            <div class=container>
+                <div class=row>
+                    <div class=col-md-8>
+                        <div class=row>
+                            <div class=userinfo>
+                                <img src=images/profile.jpg>
+                                <div class=details>
+                                    <h1>RobyTanama</h1>
+                                    <div class=basic>
+                                        <button>Chat</button>
+                                        <button>Add Friend</button>
+                                    </div>
+                                    <p class=description>
+                                        Yoooo wassup man. Thanks for checking out my profile :)
+                                    </p>
+                                    <p class=description>HMU if you tryna game</p>
+                                    <p class=description>Also down for just hang out session</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=articlepageelements>
+                            <h1 id="profilecomments">Comments</h1>
+                            <div class="commentbox">
+                                <div class="commentrating">
+                                    <button id="thumbs-up" onclick="ratingClick(this)" style="color: green;"><i class="fa fa-thumbs-up"></i></button>
+                                    <h1 id="likes">23</h1>
+                                    <button id="thumbs-down" onclick="ratingClick(this)" style="color: red;"><i class="fa fa-thumbs-down"></i></button>
+                                    <h1 id="dislikes">4</h1>
+                                </div>
+                                <div class="comment">
+                                    <a href=profilepage.html><img class=avatar src=images/profile2.png></a>
+                                    <div class=userinfo>
+                                        <a href=profilepage.html><h1>s00paGamerr</h1></a>
+                                        <p>Rating: <span style="color: green">POSITIVE</span></p> 
+                                        <p>Comments: 203</p>
+                                    </div>
+                                    <p>Yooo when we playing among us again, nice playing with you man. Hopefully done with school assignments soon!</p>
+                                </div>           
+                            </div>
+                            <div class="commentbox">
+                                <div class="commentrating">
+                                    <button id="thumbs-up" onclick="ratingClick(this)" style="color: green;"><i class="fa fa-thumbs-up"></i></button>
+                                    <h1 id="likes">3</h1>
+                                    <button id="thumbs-down" onclick="ratingClick(this)" style="color: red;"><i class="fa fa-thumbs-down"></i></button>
+                                    <h1 id="dislikes">45</h1>
+                                </div>
+                                <div class="comment">
+                                    <a href=profilepage.html><img class=avatar src=images/profile3.jpg></a>
+                                    <div class=userinfo>
+                                        <a href=profilepage.html><h1>CASUALP</h1></a>
+                                        <p>Rating: <span style="color: red">NEGATIVE</span></p> 
+                                        <p>Comments: 23</p>
+                                    </div>
+                                    <p>Cmon bro I told you I'm selling you the dota 2 character skins for like $50 but you won't take it. Disliked!
+                                    </p>
+                                </div>           
+                            </div>
+                            <div class="commentbox">
+                                <div class="commentrating">
+                                    <button id="thumbs-up" onclick="ratingClick(this)" style="color: green;"><i class="fa fa-thumbs-up"></i></button>
+                                    <h1 id="likes">15</h1>
+                                    <button id="thumbs-down" onclick="ratingClick(this)" style="color: red;"><i class="fa fa-thumbs-down"></i></button>
+                                    <h1 id="dislikes">2</h1>
+                                </div>
+                                <div class="comment">
+                                    <a href=profilepage.html><img class=avatar src=images/profile5.png></a>
+                                    <div class=userinfo>
+                                        <a href=profilepage.html><h1>4BPLayin</h1></a>
+                                        <p>Rating: <span style="color: greenyellow">POSITIVE</span></p> 
+                                        <p>Comments: 43</p>
+                                    </div>
+                                    <p>How do I contact you if I want to give you job offer? I have this programming assignment that I need to do.  
+                                    </p>
+                                </div>           
+                            </div>
+                            <div class="commentbox">
+                                <div class="commentrating">
+                                    <button id="thumbs-up" onclick="ratingClick(this)" style="color: green;"><i class="fa fa-thumbs-up"></i></button>
+                                    <h1 id="likes">4</h1>
+                                    <button id="thumbs-down" onclick="ratingClick(this)" style="color: red;"><i class="fa fa-thumbs-down"></i></button>
+                                    <h1 id="dislikes">1</h1>
+                                </div>
+                                <div class="comment">
+                                    <a href=profilepage.html><img class=avatar src=images/profile6.png></a>
+                                    <div class=userinfo>
+                                        <a href=profilepage.html><h1>The_Boyz</h1></a>
+                                        <p>Rating: <span style="color: greenyellow">POSITIVE</span></p> 
+                                        <p>Comments: 6</p>
+                                    </div>
+                                    <p>Very helpful man! Helped me get through the multiplayer part of resident evil 5, hope to play again sometimes.
+                                    </p>
+                                </div>           
+                            </div>
+                        </div>
+                    </div>
+                    <div class=col-md-4>
+                        <h1 class=highlightstitle>Highlights</h1>
+                        <div class=highlights>
+                            <h1>Notable Achievements</h1>
+                            <div class=container>
+                                <div class=row>
+                                    <div class=col-md>
+                                       <img src=images/achievement1.png>
+                                    </div>
+                                    <div class=col-md>
+                                        <img src=images/achievement2.png>
+                                     </div>
+                                    <div class=col-md>
+                                        <img src=images/achievement3.jpg>
+                                    </div>
+                                </div>
+                                <div class=row>
+                                    <div class=col-md>
+                                       <img src=images/achievement4.jpg>
+                                    </div>
+                                    <div class=col-md>
+                                        <img src=images/achievement5.jpg>
+                                     </div>
+                                    <div class=col-md>
+                                        <img src=images/achievement6.jpg>
+                                    </div>
+                                </div>
+                                <div class=row>
+                                    <div class=col-md>
+                                       <img src=images/achievement7.jpg>
+                                    </div>
+                                    <div class=col-md>
+                                        <img src=images/achievement8.jpg>
+                                     </div>
+                                    <div class=col-md>
+                                        <img src=images/achievement9.png>
+                                    </div>
+                                </div>
+                            </div>
+                            <h1>Most-played games</h1>
+                            <div class=mostplayed>
+                                <a href=gamepage.html><img src=images/game1.png></a>
+                                <div class=gameinfo>
+                                    <a href=gamepage.html><h1>Among Us</h1></a>
+                                    <p>834 Hours</p>
+                                </div>
+                            </div>
+                            <div class=mostplayed>
+                                <a href=gamepage.html><img src=images/game7.png></a>
+                                <div class=gameinfo>
+                                    <a href=gamepage.html><h1>Fallout 4 Special Ed</h1></a>
+                                    <p>732 Hours</p>
+                                </div>
+                            </div>
+                            <div class=mostplayed>
+                                <a href=gamepage.html><img src=images/game3.jpg></a>
+                                <div class=gameinfo>
+                                    <a href=gamepage.html><h1>Genshin Impact</h1></a>
+                                    <p>302 Hours</p>
+                                </div>
+                            </div>
+                            <div class=mostplayed>
+                                <a href=gamepage.html><img src=images/game4.png></a>
+                                <div class=gameinfo>
+                                    <a href=gamepage.html><h1>CS3240: The Game</h1></a>
+                                    <p>103 Hours</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="persistentfooter">
+            <div class="footerelements">
+                    <div class="social">
+                        <a href="https://www.valvesoftware.com/en"><img src="images/valve_logo.png"></a>
+                        <a href="https://store.steampowered.com"><img src="images/steam_logo.png"></a>
+                    </div>
+                    <p>© 2020 Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries.
+                        VAT included in all prices where applicable. Valve respects the intellectual property rights of others, and we ask that everyone using our 
+                        internet sites and services do the same.</p>
+            </div>
+        </footer>
+    </body>
+</html>

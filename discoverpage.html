@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+    <head>        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <link type="text/css" rel="stylesheet" href="css/globalstyle.css">
+        <link type="text/css" rel="stylesheet" href="css/discoverpagestyle.css">
+    </head>
+    <body>
+        <div class="persistentmenu">
+            <div>
+                <a class="logo" href="homepage.html">
+                    <img src="images/logo.png">
+                    <h1>COMMUNITY</h1>
+                </a>
+            </div>   
+            <h1 class="clickable"><a href="https://store.steampowered.com">STORE</a></h1>
+            <h1 class="clickable"><a href="https://steamcommunity.com/chat">CHAT</a></h1>
+            <h1 class="clickable"><a href="https://help.steampowered.com/en">SUPPORT</a></h1>
+            <div class="profile">
+                <a href="profilepage.html"><img class="image" src="images/profile1.png"></a>
+                <div>
+                    <h1 class="username">RobyTanama</h1>
+                    <h2 class="wallet">$14.60</h2>
+                </div>
+            </div>
+        </div>
+        <div class="discoverpageelements">
+            <h1>Genres Filter</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <button id="RPGFilter" onclick="toggleColor(this.id)">RPG</button>
+                    </div>
+                    <div class="col">
+                        <button id="ActionFilter" onclick="toggleColor(this.id)">Action</button>
+                    </div>
+                    <div class="col">
+                        <button id="AdventureFilter" onclick="toggleColor(this.id)">Adventure</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button id="StrategyFilter" onclick="toggleColor(this.id)">Strategy</button>
+                    </div>
+                    <div class="col">
+                        <button id="ShooterFilter" onclick="toggleColor(this.id)">Shooter</button>
+                    </div>
+                    <div class="col">
+                        <button id="PuzzleFilter" onclick="toggleColor(this.id)">Puzzle</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button id="RhythmFilter" onclick="toggleColor(this.id)">Rhythm</button>
+                    </div>
+                    <div class="col">
+                        <button id="MMOFilter" onclick="toggleColor(this.id)">MMO</button>
+                    </div>
+                    <div class="col">
+                        <button id="PlatformerFilter" onclick="toggleColor(this.id)">Platformer</button>
+                    </div>
+                </div>
+            </div>
+            <h1>User Contents</h1>
+            <div id="tabfilter" class="tabs">
+                <div class="container">
+                    <button style="background-color:rgb(88, 129, 182)" id="All" onclick="toggleTab(this.id)">All</button>
+                    <button id="Screens" onclick="toggleTab(this.id)">Screens</button>
+                    <button id="Artworks" onclick="toggleTab(this.id)">Artworks</button>
+                    <button id="Streams" onclick="toggleTab(this.id)">Streams</button>
+                    <button id="Videos" onclick="toggleTab(this.id)">Videos</button>
+                    <button id="Mods" onclick="toggleTab(this.id)">Mods</button>
+                    <button id="Guides" onclick="toggleTab(this.id)">Guides</button>
+                    <button id="Reviews" onclick="toggleTab(this.id)">Reviews</button>
+                </div>
+            </div>
+            <div id="usercontents" class="usercontents">
+                <div class="container">
+                    <div class=row>
+                        <div class="col-md">
+                            <div class="content">
+                                <h1 class="title">Guide that helps you defeat this one boss in Dark Souls! (Not for Beginners)</h1>
+                                <h1 class="category">Guides</h1>
+                                <img class="contentimage" src="images/content1.jpg">
+                                <div class="contentinfo">
+                                    <a href="articlepage.html">Click to read</a>
+                                    <div class="rating">
+                                        <button id="thumbs-up" onclick="ratingClick(this)" style="color: green;"><i class="fa fa-thumbs-up"></i></button>
+                                        <h1 id="likes">15</h1>
+                                        <button id="thumbs-down" onclick="ratingClick(this)" style="color: red;"><i class="fa fa-thumbs-down"></i></button>
+                                        <h1 id="dislikes">5</h1>
+                                        <button style="color: white"><a href="articlepage.html"><i class="fa fa-comment"></a></i></button>
+                                        <h1>20</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-md">
+                            <div class="content">
+                                <h1 class="title">WARGROOVE TOO HARD? My honest thoughts on the new indie strategy game WARGROOVE</h1>
+                                <h1 class="category">Reviews</h1>
+                                <img class="contentimage" src="images/content2.jpg">
+                                <div class="contentinfo">
+                                    <a href="articlepage.html">Click to read</a>
+                                    <div class="rating">
+                                        <button id="thumbs-up" onclick="ratingClick(this)" style="color: green;"><i class="fa fa-thumbs-up"></i></button>
+                                        <h1 id="likes">17</h1>
+                                        <button id="thumbs-down" onclick="ratingClick(this)" style="color: red;"><i class="fa fa-thumbs-down"></i></button>
+                                        <h1 id="dislikes">3</h1>
+                                        <button style="color: white"><a href="articlepage.html"><i class="fa fa-comment"></a></i></button>
+                                        <h1>12</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=row>
+                        <div class="col-md">
+                            <div class="content">
+                                <h1 class="title">All might too powerful? I managed to completely finish the game just using this trick haha!
+                                </h1>
+                                <h1 class="category">Guides</h1>
+                                <img class="contentimage" src="images/content3.jpg">
+                                <div class="contentinfo">
+                                    <a href="articlepage.html">Click to read</a>
+                                    <div class="rating">
+                                        <button id="thumbs-up" onclick="ratingClick(this)" style="color: green;"><i class="fa fa-thumbs-up"></i></button>
+                                        <h1 id="likes">25</h1>
+                                        <button id="thumbs-down" onclick="ratingClick(this)" style="color: red;"><i class="fa fa-thumbs-down"></i></button>
+                                        <h1 id="dislikes">2</h1>
+                                        <button style="color: white"><a href="articlepage.html"><i class="fa fa-comment"></a></i></button>
+                                        <h1>14</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="content">
+                                <h1 class="title">THIS LOOKS SOOOOOO GOOD OMG! I took this while playing Skyrim few days ago</h1>
+                                <h1 class="category">Screens</h1>
+                                <img class="contentimage" src="images/content4.png">
+                                <div class="contentinfo">
+                                    <a href="articlepage.html">Click to read</a>
+                                    <div class="rating">
+                                        <button id="thumbs-up" onclick="ratingClick(this)" style="color: green;"><i class="fa fa-thumbs-up"></i></button>
+                                        <h1 id="likes">3</h1>
+                                        <button id="thumbs-down" onclick="ratingClick(this)" style="color: red;"><i class="fa fa-thumbs-down"></i></button>
+                                        <h1 id="dislikes">1</h1>
+                                        <button style="color: white"><a href="articlepage.html"><i class="fa fa-comment"></a></i></button>
+                                        <h1>1</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-md">
+                            <div class="content">
+                                <h1 class="title">Keep dying while playing darkest dungeon? I have some tips and tricks that might help you!</h1>
+                                <h1 class="category">Guides</h1>
+                                <img class="contentimage" src="images/content5.jpg">
+                                <div class="contentinfo">
+                                    <a href="articlepage.html">Click to read</a>
+                                    <div class="rating">
+                                        <button id="thumbs-up" onclick="ratingClick(this)" style="color: green;"><i class="fa fa-thumbs-up"></i></button>
+                                        <h1 id="likes">10</h1>
+                                        <button id="thumbs-down" onclick="ratingClick(this)" style="color: red;"><i class="fa fa-thumbs-down"></i></button>
+                                        <h1 id="dislikes">3</h1>
+                                        <button style="color: white"><a href="articlepage.html"><i class="fa fa-comment"></a></i></button>
+                                        <h1>5</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class=row>
+                        <div class="col-md">
+                            <div class="content">
+                                <h1 class="title">Drew this the other day on paint 3d, hope you guys like it haha took me a few hours LOL</h1>
+                                <h1 class="category">Artworks</h1>
+                                <img class="contentimage" src="images/content6.jpg">
+                                <div class="contentinfo">
+                                    <a href="articlepage.html">Click to read</a>
+                                    <div class="rating">
+                                        <button id="thumbs-up" onclick="ratingClick(this)" style="color: green;"><i class="fa fa-thumbs-up"></i></button>
+                                        <h1 id="likes">26</h1>
+                                        <button id="thumbs-down" onclick="ratingClick(this)" style="color: red;"><i class="fa fa-thumbs-down"></i></button>
+                                        <h1 id="dislikes">4</h1>
+                                        <button style="color: white"><a href="articlepage.html"><i class="fa fa-comment"></a></i></button>
+                                        <h1>13</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="content">
+                                <h1 class="title">This screenshot almost took me the entire day just to get it right. Hope you guys can appreciate it!</h1>
+                                <h1 class="category">Screens</h1>
+                                <img class="contentimage" src="images/content7.jpg">
+                                <div class="contentinfo">
+                                    <a href="articlepage.html">Click to read</a>
+                                    <div class="rating">
+                                        <button id="thumbs-up" onclick="ratingClick(this)" style="color: green;"><i class="fa fa-thumbs-up"></i></button>
+                                        <h1 id="likes">50</h1>
+                                        <button id="thumbs-down" onclick="ratingClick(this)" style="color: red;"><i class="fa fa-thumbs-down"></i></button>
+                                        <h1 id="dislikes">7</h1>
+                                        <button style="color: white"><a href="articlepage.html"><i class="fa fa-comment"></a></i></button>
+                                        <h1>12</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-md">
+                            <div class="content">
+                                <h1 class="title">OMG Perfect timing HAHAHHAH! Can't believe such a good looking game can produce this LOL</h1>
+                                <h1 class="category">Screens</h1>
+                                <img class="contentimage" src="images/content8.jpg">
+                                <div class="contentinfo">
+                                    <a href="articlepage.html">Click to read</a>
+                                    <div class="rating">
+                                        <button id="thumbs-up" onclick="ratingClick(this)" style="color: green;"><i class="fa fa-thumbs-up"></i></button>
+                                        <h1 id="likes">29</h1>
+                                        <button id="thumbs-down" onclick="ratingClick(this)" style="color: red;"><i class="fa fa-thumbs-down"></i></button>
+                                        <h1 id="dislikes">14</h1>
+                                        <button style="color: white"><a href="articlepage.html"><i class="fa fa-comment"></a></i></button>
+                                        <h1>7</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=row>
+                        <div class="col-md">
+                            <div class="content">
+                                <h1 class="title">xQc streaming among us with 39daph, pewdiepie, and many other big names</h1>
+                                <h1 class="category">Streams</h1>
+                                <img class="contentimage" src="images/content9.jpg">
+                                <div class="contentinfo">
+                                    <a href="articlepage.html">Click to read</a>
+                                    <div class="rating">
+                                        <button id="thumbs-up" onclick="ratingClick(this)" style="color: green;"><i class="fa fa-thumbs-up"></i></button>
+                                        <h1 id="likes">1345</h1>
+                                        <button id="thumbs-down" onclick="ratingClick(this)" style="color: red;"><i class="fa fa-thumbs-down"></i></button>
+                                        <h1 id="dislikes">30</h1>
+                                        <button style="color: white"><a href="articlepage.html"><i class="fa fa-comment"></a></i></button>
+                                        <h1>42</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=row>
+                        <div class="col-md">
+                            <div class="content">
+                                <h1 class="title">Some tweaks that can make your skyrim game look better</h1>
+                                <h1 class="category">Mods</h1>
+                                <img class="contentimage" src="images/content10.jpg">
+                                <div class="contentinfo">
+                                    <a href="articlepage.html">Click to read</a>
+                                    <div class="rating">
+                                        <button id="thumbs-up" onclick="ratingClick(this)" style="color: green;"><i class="fa fa-thumbs-up"></i></button>
+                                        <h1 id="likes">52</h1>
+                                        <button id="thumbs-down" onclick="ratingClick(this)" style="color: red;"><i class="fa fa-thumbs-down"></i></button>
+                                        <h1 id="dislikes">2</h1>
+                                        <button style="color: white"><a href="articlepage.html"><i class="fa fa-comment"></a></i></button>
+                                        <h1>8</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="content">
+                                <h1 class="title">Audio fix for some parts of silent hill cause it sounds horrible</h1>
+                                <h1 class="category">Mods</h1>
+                                <img class="contentimage" src="images/content11.jpg">
+                                <div class="contentinfo">
+                                    <a href="articlepage.html">Click to read</a>
+                                    <div class="rating">
+                                        <button id="thumbs-up" onclick="ratingClick(this)" style="color: green;"><i class="fa fa-thumbs-up"></i></button>
+                                        <h1 id="likes">75</h1>
+                                        <button id="thumbs-down" onclick="ratingClick(this)" style="color: red;"><i class="fa fa-thumbs-down"></i></button>
+                                        <h1 id="dislikes">8</h1>
+                                        <button style="color: white"><a href="articlepage.html"><i class="fa fa-comment"></a></i></button>
+                                        <h1>16</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="content">
+                                <h1 class="title">Among us.. Is it a good game? I don't think so!</h1>
+                                <h1 class="category">Reviews</h1>
+                                <img class="contentimage" src="images/content12.jpg">
+                                <div class="contentinfo">
+                                    <a href="articlepage.html">Click to read</a>
+                                    <div class="rating">
+                                        <button id="thumbs-up" onclick="ratingClick(this)" style="color: green;"><i class="fa fa-thumbs-up"></i></button>
+                                        <h1 id="likes">7</h1>
+                                        <button id="thumbs-down" onclick="ratingClick(this)" style="color: red;"><i class="fa fa-thumbs-down"></i></button>
+                                        <h1 id="dislikes">80</h1>
+                                        <button style="color: white"><a href="articlepage.html"><i class="fa fa-comment"></a></i></button>
+                                        <h1>9</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=row>
+                        <div class="col-md">
+                            <div class="content">
+                                <h1 class="title">Some really epic Witcher 3 gameplay with heavy swords</h1>
+                                <h1 class="category">Videos</h1>
+                                <img class="contentimage" src="images/content13.jpg">
+                                <div class="contentinfo">
+                                    <a href="articlepage.html">Click to read</a>
+                                    <div class="rating">
+                                        <button id="thumbs-up" onclick="ratingClick(this)" style="color: green;"><i class="fa fa-thumbs-up"></i></button>
+                                        <h1 id="likes">64</h1>
+                                        <button id="thumbs-down" onclick="ratingClick(this)" style="color: red;"><i class="fa fa-thumbs-down"></i></button>
+                                        <h1 id="dislikes">6</h1>
+                                        <button style="color: white"><a href="articlepage.html"><i class="fa fa-comment"></a></i></button>
+                                        <h1>11</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="content">
+                                <h1 class="title">Really difficult monster hunter world boss oh my god</h1>
+                                <h1 class="category">Videos</h1>
+                                <img class="contentimage" src="images/content14.jpg">
+                                <div class="contentinfo">
+                                    <a href="articlepage.html">Click to read</a>
+                                    <div class="rating">
+                                        <button id="thumbs-up" onclick="ratingClick(this)" style="color: green;"><i class="fa fa-thumbs-up"></i></button>
+                                        <h1 id="likes">32</h1>
+                                        <button id="thumbs-down" onclick="ratingClick(this)" style="color: red;"><i class="fa fa-thumbs-down"></i></button>
+                                        <h1 id="dislikes">15</h1>
+                                        <button style="color: white"><a href="articlepage.html"><i class="fa fa-comment"></a></i></button>
+                                        <h1>13</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="persistentfooter">
+            <div class="footerelements">
+                    <div class="social">
+                        <a href="https://www.valvesoftware.com/en"><img src="images/valve_logo.png"></a>
+                        <a href="https://store.steampowered.com"><img src="images/steam_logo.png"></a>
+                    </div>
+                    <p>© 2020 Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries.
+                        VAT included in all prices where applicable. Valve respects the intellectual property rights of others, and we ask that everyone using our 
+                        internet sites and services do the same.</p>
+            </div>
+        </footer>
+    </body>
+</html>

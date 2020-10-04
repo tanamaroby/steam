@@ -1,0 +1,146 @@
+.discoverpageelements {
+    margin-top: 30px;
+    text-align: center;
+    padding-bottom: 2.5rem;
+}
+
+.discoverpageelements h1 {
+    font-size: 1.5em;
+}
+
+/* this one is for filters*/
+.discoverpageelements .container {
+    width: 600px;
+    margin-bottom: 50px;
+}
+
+.discoverpageelements .row {
+    margin-top: 25px;
+}
+
+.discoverpageelements .container .row .col button {
+    width: 150px;
+    padding: 10px;
+    background-color: #2a3f5a;
+    color: white;
+    border: 1px solid rgb(30, 30, 30);
+    border-radius: 2px;
+}
+
+.discoverpageelements button:focus {
+    outline: none;
+}
+
+.discoverpageelements .tabs .container {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.discoverpageelements .tabs button {
+    width: 12%;
+    padding: 10px;
+    background-color: #2a3f5a;
+    color: white;
+    border: none;
+    border-radius: 20px 20px 0px 0px;
+    border-top: 1px solid rgb(30, 30, 30);
+    border-left: 1px solid rgb(30, 30, 30);
+    border-right: 1px solid rgb(30, 30, 30);
+}
+
+.discoverpageelements .usercontents .container {
+    width: 900px;
+    background-color: rgb(88, 129, 182);
+    border-radius: 5px;
+}
+
+.discoverpageelements .usercontents .row {
+    margin-top: 0px;
+}
+
+.discoverpageelements .usercontents .row .col-md {
+    padding: 0px;
+    margin: 0px;
+}
+
+.discoverpageelements .usercontents .content {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: rgb(13, 19, 27);
+    border: 2px solid #2a3f5a;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.discoverpageelements .usercontents .content .title {
+    font-size: 1em;
+    text-align: left;
+    color: rgb(218, 218, 218);
+}
+
+.discoverpageelements .usercontents .content .category {
+    font-size: 0.8em;
+    color: rgb(155, 155, 155);
+    text-align: left;
+}
+
+.discoverpageelements .usercontents .content .contentimage {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 2px solid #2a3f5a;
+}
+
+.discoverpageelements .usercontents .content .contentinfo {
+    display: flex;
+}
+
+.discoverpageelements .usercontents .content a {
+    color: rgb(189, 189, 189);
+    float: left;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    left: 0;
+}
+
+.discoverpageelements .usercontents .content a:hover {
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+}
+
+.discoverpageelements .usercontents .content .rating {
+    display: flex;
+    float: right;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.discoverpageelements .usercontents .content .rating h1 {
+    font-size: 1em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.discoverpageelements .usercontents .content .rating button {
+    background-color: rgb(13, 19, 27);
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.2em;
+    padding: 0px;
+    border: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .discoverpageelements .tabs button {
+        width: 11.5%;
+        font-size: 0.7em;
+        border-radius: 0px;
+    }
+}

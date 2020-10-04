@@ -1,0 +1,139 @@
+.homepageelements {
+    margin-top: 30px;
+    text-align: center;
+    padding-bottom: 2.5rem;
+}
+
+.homepageelements h1 {
+    font-size: 1.5em;
+}
+
+.homepageelements .container {  
+    width: 800px;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.homepageelements .search {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    
+}
+.homepageelements .search input[type=text] {
+    background-color: #2a3f5a;
+    padding: 5px 10px 5px 10px;
+    width: 100%;
+    color: rgb(180, 180, 180);
+    font-family: sans-serif;
+    border: none;
+    box-shadow: 0px 2.5px 5px rgb(17, 17, 17);
+    outline: 0;
+    border-radius: 2px;
+    padding-right: 50px;
+    font-style: italic;
+}
+
+.homepageelements .search button {
+    cursor: pointer;
+    margin-left: -50px;
+    width: 50px;
+    background-color: #2a3f5a;
+    border: none;
+    color: rgb(180, 180, 180);
+    border-radius: 2px;
+    outline: 0;
+}
+
+.homepageelements .search button:active {
+    color: white;
+}
+
+.homepageelements .recentlist {
+    background-color: #2a3f5a;
+    box-shadow: 0px 2.5px 5px rgb(17, 17, 17);
+    margin-bottom: 50px;
+}
+
+.homepageelements .recentlist .listinfo {
+    font-size: 0.9em;
+    padding: 15px 0px 10px 10px;
+    text-align: left;
+    color: rgb(172, 172, 172);
+    font-family: sans-serif;
+}
+
+.homepageelements .row {
+    padding: 0px;
+    margin: 0px;
+}
+
+.homepageelements .col-md {
+    display: flex;   
+    align-items: center;
+    justify-content: left;
+    margin: 0px 10px 10px 10px;
+    padding: 0px;
+}
+
+.homepageelements .itemsinfo {
+    font-size: 0.75em;
+    text-align: left;
+    margin-left: 10px;
+    height: 45px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.homepageelements .itemsinfo .name h1 {
+    color: rgb(228, 228, 228);
+}
+
+.homepageelements .itemsinfo .name h1:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.homepageelements .itemsinfo .last {
+    color: rgb(170, 170, 170);
+}
+
+.homepageelements .image {
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgb(41, 41, 41);
+    border-radius: 5px;
+}
+
+.discoverdirect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.discoverdirect button {
+    margin-left: 25px;
+    font-size: 1.5em; 
+    padding: 5px 15px 5px 15px;
+    background-color: #2a3f5a;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 2.5px 5px rgb(17, 17, 17);
+}
+
+.discoverdirect button {
+    color: rgb(192, 192, 192);
+}
+
+.discoverdirect button:hover {
+    color: rgb(224, 224, 224);
+}
+
+.discoverdirect button:focus {
+    color: white;
+    border: none;
+    outline: none;
+}
